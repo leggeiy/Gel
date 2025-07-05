@@ -1,7 +1,8 @@
 import discord
 from discord.ext import commands
 from config import token  # Import the bot's token from configuration file
-
+from facts import factsies
+import random
 intents = discord.Intents.default()
 intents.members = True  # Allows the bot to work with users and ban them
 intents.message_content = True
@@ -20,6 +21,7 @@ async def on_member_join(member):
     # Mengirim pesan ucapan selamat
     for channel in member.guild.text_channels:
         await channel.send(f'Selamat datang, {member.mention}!')
+
 @bot.command()
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, member: discord.Member = None):
@@ -39,4 +41,8 @@ async def ban_error(ctx, error):
     elif isinstance(error, commands.MemberNotFound):
         await ctx.send("User not found.")
 
+@bot.command()
+async def facts(ctx):
+    a = random.choice(factsies)
+    await ctx.send(a)
 bot.run(token)

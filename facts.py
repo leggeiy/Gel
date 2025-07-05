@@ -1,0 +1,3 @@
+factsies = ["Pizza hut is Bankrupt", "Flask, a python web thing, was actually a joke!", "Guns work by using Explosions to shoot the front part of a bullet!", "Pixar was started by Steve jobs, the same guy who started apple",
+            "the word Dollar comes from the word Thaler from Germany", "Discord has Games!", "The the brain doesnt read the second the!", "the name Salmonella comes from a guy called Daniel E. Salmon",
+            "Ketchup is one of the world's worst foods in the whole wide world", "Gummy Bears was originally called Dancing Bears", "Gum was invented by a dentist, ironic."]
